@@ -1,4 +1,4 @@
 // eslint-disable-next-line no-unused-vars
-function inspect(obj, depth) {
-  console.error(require('util').inspect(obj, false, depth || 5, true))
+function inspect(obj, { depth = 5, colors = true, maxArrayLength = 10 } = {}) {
+  console.error(require('util').inspect(obj, { depth, colors, maxArrayLength }))
 }
