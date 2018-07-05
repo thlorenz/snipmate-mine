@@ -1,6 +1,10 @@
 // Test
 if (!module.parent && typeof window === 'undefined') {
 (async () => {
-  ${1}
+  try {
+    ${1}
+  } catch (err) {
+    console.error(err)
+  }
 })()
 }
